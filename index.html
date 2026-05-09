@@ -1,60 +1,62 @@
-<h1 style="text-align:center;">Aplicaciones móviles en Desarrollo Web Front-End</h1>
+<!DOCTYPE html>
+<!--Created by Ardora - www.webardora.net-->
+<!--ArdoraEWMenu-->
+<html lang="es">
+<head><meta charset="utf-8" /><title>Inicio</title><link rel="icon" type="image/png" href="https://www.webardora.net/ardoraicon.png">
+<!--INICSS-->
+<link type="text/css" href="css/normalize.css" rel="stylesheet" />
+<link type="text/css" href="midnight/ui.all.css" rel="stylesheet" />
+<link type="text/css" href="css/fg.menu.css" rel="stylesheet" />
+<link type="text/css" href="css/ardoraEW.css" rel="stylesheet" />
+<!--INIJS-->
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/fg.menu.js"></script>
+<script language="javascript" type="text/javascript" src="js/fisheye-iutil.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.jqDock.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/ardoraEWMenu.js"></script>
 
-<p style="text-align:center;">
-  <img src="images/upnfm.png"
+    </head>
+<body onLoad="javascript:cargar('resources/iniFiles/inicio.html')">
 
-       width="260"
-       alt="Logo de la universidad">
-</p>
+<div id="contedorTotal">
 
-<h2 style="text-align:center;">Universidad Pedagógica Nacional Francisco Morazán</h2>
+<header id="cabeceira">
+     <div id="titulo">INICIO</div>
+     <div id="subtitulo"></div>
+</header>
 
-<p style="text-align:center;">
-  <strong>Licenciatura en Informática Educativa</strong>
-</p>
-
-<hr>
-
-<h3>📘 Presentación del material</h3>
-
-<p>
-Este espacio web presenta un material educativo sobre el uso de aplicaciones móviles
-como apoyo al aprendizaje del desarrollo web Front-End.
-</p>
-
-<p>
-El contenido está organizado de forma horizontal para facilitar la navegación entre los
-apartados principales del curso, manteniendo una estructura clara, ordenada y accesible.
-</p>
-
-<h3>🎯 Propósito del recurso</h3>
-
-<p>
-El propósito de este material es brindar una guía de aprendizaje sobre los fundamentos del
-Front-End y el uso de herramientas digitales que permiten estudiar HTML, CSS y JavaScript
-de manera flexible y progresiva.
-</p>
-
-<h3>📌 Datos generales</h3>
-
+<nav id="areaMenu">
+<a tabindex="1" href="#" onclick="javascript:cargar('resources/menuFiles/inicio.html')" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat0">INICIO</a>
+<a tabindex="2" href="#" onclick="javascript:cargar('resources/menuFiles/indice.html')" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat1">INDICE</a>
+<a tabindex="3" href="#" onclick="javascript:cargar('resources/menuFiles/introduccion.html')" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat2">INTRODUCCIÓN</a>
+<a tabindex="4" href="#" onclick="javascript:cargar('resources/menuFiles/objetivos.html')" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat3">OBJETIVOS</a>
+<a tabindex="5" href="#" onclick="javascript:cargar('resources/menuFiles/Modulo1.html')" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat4">FRONT-END</a>
+<a tabindex="6" href="#search-engines5" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat5"><span class="ui-icon ui-icon-triangle-1-s"></span>APLICACIONES</a>
+<div id="search-engines5" class="hidden">
 <ul>
-  <li><strong>Asignatura:</strong> Software Aplicado a la Enseñanza</li>
-  <li><strong>Catedrático:</strong> Lic. Alexis Randolfo Ramos</li>
-  <li><strong>Estudiante:</strong> José Armando López Izaguirre</li>
+<li><a tabindex="-1" href="#" onclick="javascript:cargar('resources/menuFiles/Modulo2.html')">APPFRONTEND</a></li>
+<li><a tabindex="-1" href="#" onclick="javascript:cargar('resources/menuFiles/HTMLCSSLearn.html')">HTML & CSS LEARN</a></li>
+<li><a tabindex="-1" href="#" onclick="javascript:cargar('resources/menuFiles/WebDevelopmentTutorials.html')">WEB DEVELOPMENT TUTORIALS</a></li>
+<li><a tabindex="-1" href="#" onclick="javascript:cargar('resources/menuFiles/W3Schools.html')">W3SCHOOLS</a></li>
+<li><a tabindex="-1" href="#" onclick="javascript:cargar('resources/menuFiles/Enki.html')">ENKI</a></li>
 </ul>
+</div>
+<a tabindex="7" href="#" onclick="javascript:cargar('resources/menuFiles/Bibliografia.html')" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat11">BIBLIOGRAFÍA</a>
+<a tabindex="8" href="#" onclick="javascript:cargar('resources/menuFiles/Compilador.html')" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat12">COMPILADOR</a>
+</nav>
 
-<h3>🧭 Contenido principal</h3>
+<main id="ArdoraIframe">
+<iframe title="central" id="showIframe" tabindex="0"></iframe>
+</main>
 
-<ul>
-  <li>Introducción al desarrollo web Front-End.</li>
-  <li>Objetivos del material educativo.</li>
-  <li>Fundamentos de HTML, CSS y JavaScript.</li>
-  <li>Aplicaciones móviles para aprender Front-End.</li>
-  <li>Bibliografía y créditos del proyecto.</li>
-</ul>
+<footer id="pe_pax">
+  <div id="peText">Espacio creado con fines practicos para la asignatura de Software Aplicado a la Enseñanza.</div>
+</footer>
 
-<hr>
-
-<p style="text-align:center;">
-  <strong>Material virtual de aprendizaje desarrollado para Espacio Web de Ardora.</strong>
-</p>
+</div>
+<!-- MENU GRAFICO ======================-->
+<div id="dock"><div class="dock-container" align="center">
+</div></div>
+<!-- FIN MENU GRAFICO ================= -->
+</body>
+</html>
